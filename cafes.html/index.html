@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>คาเฟ่ | SA KAEO</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    .restaurant-header {
+      padding: 100px 20px 70px;
+      text-align: center;
+      background: linear-gradient(135deg, #eeeeee, #d8d8d8);
+    }
+
+    .restaurant-header h1 {
+      font-size: clamp(38px, 6vw, 60px);
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    .restaurant-header p {
+      color: #555;
+      font-size: 17px;
+    }
+
+    .restaurant-section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    .restaurant-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .restaurant-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 18px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    .restaurant-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .restaurant-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .restaurant-content {
+      padding: 25px;
+    }
+
+    .restaurant-content h2 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .restaurant-type {
+      display: inline-block;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .restaurant-content p {
+      color: #666;
+      line-height: 1.7;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .card-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .small-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 10px 16px;
+
+      border-radius: 10px;
+
+      background: linear-gradient(135deg, #333, #666);
+      color: #fff;
+
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+
+      border: 1px solid #777;
+
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+
+      transition: all 0.25s ease;
+    }
+
+    .small-button:hover {
+      background: linear-gradient(135deg, #555, #888);
+      transform: translateY(-2px);
+    }
+
+    .map-button {
+      background: #f5f5f5;
+      color: #333;
+      border: 1px solid #ccc;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .map-button:hover {
+      background: #fff;
+      color: #111;
+      border-color: #999;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .back-button:hover {
+      background: #444;
+    }
+
+    @media (max-width: 768px) {
+
+      .restaurant-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .restaurant-card img {
+        height: 220px;
+      }
+
+      .card-buttons {
+        flex-direction: column;
+      }
+
+      .small-button {
+        width: 100%;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <div class="nav-container">
+
+      <a href="/site/index.html" class="logo">
+        SA KAEO
+      </a>
+
+      <div class="nav-links">
+
+        <a href="/site/index.html">
+          หน้าหลัก
+        </a>
+
+        <a href="/site/index.html#about">
+          เกี่ยวกับสระแก้ว
+        </a>
+
+        <a href="/site/index.html#places">
+          สถานที่ท่องเที่ยว
+        </a>
+
+        <a href="/site/index.html#food">
+          ของกิน ของดี
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- HEADER -->
+
+  <header class="restaurant-header">
+
+    <h1>☕ คาเฟ่</h1>
+
+    <p>
+      รวมคาเฟ่และร้านกาแฟที่น่าสนใจในจังหวัดสระแก้ว
+    </p>
+
+  </header>
+
+
+  <!-- CAFES -->
+
+  <main class="restaurant-section">
+
+    <div class="restaurant-grid">
+
+
+      <!-- 1 Home Cafe -->
+
+      <article class="restaurant-card">
+
+        <img
+          src="../images/cafes/homecafe.jpg"
+          alt="Home Cafe Sakaeo"
+        >
+
+        <div class="restaurant-content">
+
+          <h2>
+            Home Cafe Sakaeo
+          </h2>
+
+          <span class="restaurant-type">
+            ☕ คาเฟ่ / เครื่องดื่ม
+          </span>
+
+          <p>
+            คาเฟ่บรรยากาศอบอุ่น เหมาะสำหรับนั่งพักผ่อน
+            ดื่มกาแฟ และใช้เวลาสบาย ๆ กับเพื่อนหรือครอบครัว
+          </p>
+
+          <div class="card-buttons">
+
+            <a
+              href="/site/cafe-home.html"
+              class="small-button"
+            >
+              → ดูรายละเอียด
+            </a>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Home+Cafe+Sakaeo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="small-button map-button"
+            >
+              📍 Google Maps
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 2 Holly Home -->
+
+      <article class="restaurant-card">
+
+        <img
+          src="../images/cafes/hollyhome.jpg"
+          alt="Holly Home Cafe"
+        >
+
+        <div class="restaurant-content">
+
+          <h2>
+            Holly Home Cafe
+          </h2>
+
+          <span class="restaurant-type">
+            ☕ คาเฟ่ / เครื่องดื่ม
+          </span>
+
+          <p>
+            คาเฟ่สไตล์มินิมอล บรรยากาศสบาย ๆ
+            เหมาะสำหรับพักผ่อน นั่งเล่น และถ่ายรูป
+          </p>
+
+          <div class="card-buttons">
+
+            <a
+              href="/site/cafe-holly.html"
+              class="small-button"
+            >
+              → ดูรายละเอียด
+            </a>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Holly+Home+Cafe+สระแก้ว"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="small-button map-button"
+            >
+              📍 Google Maps
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 3 Wood House -->
+
+      <article class="restaurant-card">
+
+        <img
+          src="../images/cafes/woodhouse.jpeg"
+          alt="Wood House Khao Chakan"
+        >
+
+        <div class="restaurant-content">
+
+          <h2>
+            Wood House Khao Chakan
+          </h2>
+
+          <span class="restaurant-type">
+            🌿 คาเฟ่ / ร้านกาแฟ
+          </span>
+
+          <p>
+            คาเฟ่บรรยากาศดีในเขาฉกรรจ์
+            เหมาะสำหรับนั่งพักผ่อน ดื่มเครื่องดื่ม
+            และถ่ายรูป
+          </p>
+
+          <div class="card-buttons">
+
+            <a
+              href="/site/cafe-woodhouse.html"
+              class="small-button"
+            >
+              → ดูรายละเอียด
+            </a>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Wood+House+Khao+Chakan"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="small-button map-button"
+            >
+              📍 Google Maps
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 4 Coffee Hills -->
+
+      <article class="restaurant-card">
+
+        <img
+          src="../images/cafes/coffeehills.jpg"
+          alt="Coffee Hills Cafe"
+        >
+
+        <div class="restaurant-content">
+
+          <h2>
+            Coffee Hills Cafe
+          </h2>
+
+          <span class="restaurant-type">
+            ☕ คาเฟ่ / ร้านอาหาร
+          </span>
+
+          <p>
+            คาเฟ่และร้านอาหารสไตล์โมเดิร์น
+            มีทั้งกาแฟ เครื่องดื่ม ขนม และอาหาร
+          </p>
+
+          <div class="card-buttons">
+
+            <a
+              href="/site/cafe-coffeehills.html"
+              class="small-button"
+            >
+              → ดูรายละเอียด
+            </a>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Coffee+Hills+Cafe+สระแก้ว"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="small-button map-button"
+            >
+              📍 Google Maps
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+    <!-- BACK TO HOME -->
+
+    <div style="text-align: center; margin-top: 50px;">
+
+      <a
+        href="/site/index.html"
+        class="back-button"
+      >
+        ← กลับหน้าแรก
+      </a>
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 SA KAEO | เว็บไซต์แนะนำจังหวัดสระแก้ว
+    </p>
+
+  </footer>
+
+
+</body>
+
+</html>

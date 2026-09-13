@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ของดีจากตลาดโรงเกลือ | SA KAEO</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #222;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    nav .menu {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav .menu a:hover {
+      opacity: 0.7;
+    }
+
+    /* HEADER */
+    .market-header {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .market-header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .market-header p {
+      font-size: 17px;
+      color: #ddd;
+    }
+
+    /* CONTENT */
+    .market-section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .intro {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      border: 1px solid #ddd;
+    }
+
+    .intro h2 {
+      margin-bottom: 12px;
+      font-size: 26px;
+    }
+
+    .intro p {
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    /* GRID */
+    .market-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .market-card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      border: 1px solid #ddd;
+      transition: 0.3s ease;
+    }
+
+    .market-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .market-icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    .market-card h3 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .market-card h4 {
+      font-size: 17px;
+      margin-top: 18px;
+      margin-bottom: 5px;
+    }
+
+    .market-card p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    /* BACK BUTTON */
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 45px auto 0;
+      padding: 12px 25px;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .back-button:hover {
+      opacity: 0.8;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .market-header h1 {
+        font-size: 32px;
+      }
+
+      .market-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .market-card {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+
+    <a href="/site/index.html" class="logo">
+      SA KAEO
+    </a>
+
+    <div class="menu">
+
+      <a href="/site/index.html">
+        หน้าหลัก
+      </a>
+
+      <a href="/site/index.html#about">
+        เกี่ยวกับสระแก้ว
+      </a>
+
+      <a href="/site/index.html#places">
+        สถานที่ท่องเที่ยว
+      </a>
+
+      <a href="/site/index.html#food">
+        ของกิน ของดี
+      </a>
+
+    </div>
+
+  </nav>
+
+
+  <!-- HEADER -->
+  <header class="market-header">
+
+    <h1>ของดีจากตลาดโรงเกลือ</h1>
+
+    <p>
+      แหล่งรวมสินค้าหลากหลายจากตลาดการค้าชายแดนจังหวัดสระแก้ว
+    </p>
+
+  </header>
+
+
+  <!-- CONTENT -->
+  <main class="market-section">
+
+
+    <!-- INTRO -->
+    <div class="intro">
+
+      <h2>ของดีจากตลาดโรงเกลือ</h2>
+
+      <p>
+        ตลาดโรงเกลือเป็นแหล่งการค้าชายแดนที่มีชื่อเสียง
+        ของจังหวัดสระแก้ว ตั้งอยู่บริเวณอำเภออรัญประเทศ
+        ใกล้กับชายแดนไทย–กัมพูชา
+        และเป็นแหล่งรวมสินค้าที่มีความหลากหลาย
+      </p>
+
+      <p>
+        ภายในตลาดมีสินค้าหลายประเภทให้เลือกซื้อ
+        ตั้งแต่เสื้อผ้า รองเท้า กระเป๋า ของเล่น
+        ของใช้ และสินค้าเบ็ดเตล็ดต่าง ๆ
+        ทำให้ตลาดแห่งนี้เป็นที่รู้จักในฐานะแหล่งช้อปปิ้ง
+        และการค้าชายแดนที่สำคัญของจังหวัด
+      </p>
+
+      <p>
+        สินค้าต่าง ๆ ภายในตลาดช่วยสร้างความหลากหลาย
+        และสร้างความคึกคักให้กับพื้นที่
+        รวมถึงสร้างรายได้ให้แก่ผู้ค้าและผู้ประกอบการ
+      </p>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+    <div class="market-grid">
+
+
+      <!-- CLOTHES -->
+      <article class="market-card">
+
+        <div class="market-icon">👕</div>
+
+        <h3>เสื้อผ้า</h3>
+
+        <h4>รายละเอียด</h4>
+
+        <p>
+          เสื้อผ้าเป็นสินค้าประเภทหนึ่งที่พบได้หลากหลาย
+          ภายในตลาดโรงเกลือ มีทั้งเสื้อยืด เสื้อเชิ้ต
+          กางเกง เสื้อผ้าแฟชั่น และเสื้อผ้าสำหรับเด็ก
+          และผู้ใหญ่
+        </p>
+
+        <h4>จุดเด่น</h4>
+
+        <p>
+          มีรูปแบบและประเภทให้เลือกจำนวนมาก
+          เหมาะสำหรับผู้ที่ต้องการเลือกซื้อเสื้อผ้า
+          สำหรับใช้งานในชีวิตประจำวัน
+          หรือเลือกซื้อกลับไปเป็นของฝาก
+        </p>
+
+      </article>
+
+
+      <!-- SHOES -->
+      <article class="market-card">
+
+        <div class="market-icon">👟</div>
+
+        <h3>รองเท้า</h3>
+
+        <h4>รายละเอียด</h4>
+
+        <p>
+          ตลาดโรงเกลือมีรองเท้าหลายรูปแบบ
+          เช่น รองเท้าผ้าใบ รองเท้าแตะ รองเท้ากีฬา
+          และรองเท้าสำหรับใช้งานทั่วไป
+        </p>
+
+        <h4>จุดเด่น</h4>
+
+        <p>
+          มีสินค้าให้เลือกหลายประเภทและหลายขนาด
+          ผู้ซื้อสามารถเลือกสินค้าให้เหมาะกับ
+          ลักษณะการใช้งานและความต้องการของตนเอง
+        </p>
+
+      </article>
+
+
+      <!-- BAGS -->
+      <article class="market-card">
+
+        <div class="market-icon">👜</div>
+
+        <h3>กระเป๋า</h3>
+
+        <h4>รายละเอียด</h4>
+
+        <p>
+          กระเป๋าเป็นอีกหนึ่งสินค้าที่พบได้ในตลาด
+          มีทั้งกระเป๋าสะพาย กระเป๋าเป้
+          กระเป๋าเดินทาง และกระเป๋าสำหรับใช้งานทั่วไป
+        </p>
+
+        <h4>จุดเด่น</h4>
+
+        <p>
+          มีหลายรูปแบบและหลายขนาด
+          สามารถเลือกซื้อให้เหมาะกับการเดินทาง
+          การเรียน การทำงาน หรือการใช้งานในชีวิตประจำวัน
+        </p>
+
+      </article>
+
+
+      <!-- TOYS -->
+      <article class="market-card">
+
+        <div class="market-icon">🧸</div>
+
+        <h3>ของเล่น</h3>
+
+        <h4>รายละเอียด</h4>
+
+        <p>
+          ภายในตลาดมีสินค้าประเภทของเล่น
+          และของสะสมหลายรูปแบบ
+          เหมาะสำหรับเด็กและผู้ที่ชื่นชอบของเล่น
+        </p>
+
+        <h4>จุดเด่น</h4>
+
+        <p>
+          มีสินค้าให้เลือกหลากหลายประเภท
+          สามารถนำไปใช้เป็นของขวัญหรือของฝาก
+          สำหรับเด็กและสมาชิกในครอบครัว
+        </p>
+
+      </article>
+
+
+      <!-- HOUSEHOLD -->
+      <article class="market-card">
+
+        <div class="market-icon">🏠</div>
+
+        <h3>ของใช้ในชีวิตประจำวัน</h3>
+
+        <h4>รายละเอียด</h4>
+
+        <p>
+          ตลาดมีสินค้าของใช้หลายประเภท
+          เช่น อุปกรณ์ภายในบ้าน ของใช้ส่วนตัว
+          และสิ่งของที่สามารถนำไปใช้ในชีวิตประจำวัน
+        </p>
+
+        <h4>จุดเด่น</h4>
+
+        <p>
+          มีสินค้าหลากหลายประเภทให้เลือก
+          เหมาะสำหรับผู้ที่ต้องการหาของใช้ทั่วไป
+          หรือเลือกซื้อสินค้าไปใช้ภายในบ้าน
+        </p>
+
+      </article>
+
+
+      <!-- MISC -->
+      <article class="market-card">
+
+        <div class="market-icon">🎁</div>
+
+        <h3>สินค้าเบ็ดเตล็ดและของฝาก</h3>
+
+        <h4>รายละเอียด</h4>
+
+        <p>
+          นอกจากสินค้าหลักแล้ว ยังมีสินค้าเบ็ดเตล็ด
+          ของตกแต่ง ของสะสม และสินค้าที่เหมาะสำหรับ
+          นำกลับไปเป็นของฝาก
+        </p>
+
+        <h4>จุดเด่น</h4>
+
+        <p>
+          สินค้ามีความหลากหลายและสามารถเลือกซื้อ
+          ตามความสนใจของแต่ละคน
+          ทำให้ตลาดมีตัวเลือกสินค้าที่ค่อนข้างมาก
+        </p>
+
+      </article>
+
+
+    </div>
+
+
+    <!-- BACK BUTTON -->
+    <a href="/site/index.html" class="back-button">
+      ← กลับหน้าแรก
+    </a>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      IS SAKAEO | จังหวัดสระแก้ว
+    </p>
+
+  </footer>
+
+</body>
+</html>
